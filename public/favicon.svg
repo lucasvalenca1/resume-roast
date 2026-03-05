@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="flameGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="64" y="32" width="128" height="160" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="4"/>
+  <line x1="88" y1="64" x2="168" y2="64" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+  <line x1="88" y1="88" x2="168" y2="88" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+  <line x1="88" y1="112" x2="144" y2="112" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+  <path d="M128 224 Q118 200 108 192 Q118 188 118 176 Q118 168 128 160 Q138 168 138 176 Q138 188 148 192 Q138 200 128 224 Z" fill="url(#flameGrad)"/>
+  <path d="M100 216 Q94 204 88 200 Q94 196 94 188 Q94 182 100 176 Q106 182 106 188 Q106 196 112 200 Q106 204 100 216 Z" fill="url(#flameGrad)"/>
+  <path d="M156 216 Q150 204 144 200 Q150 196 150 188 Q150 182 156 176 Q162 182 162 188 Q162 196 168 200 Q162 204 156 216 Z" fill="url(#flameGrad)"/>
+</svg>

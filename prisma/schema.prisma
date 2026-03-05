@@ -1,0 +1,25 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/resume_roast_app/nextjs_space/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+// Resume Roast Model
+model Roast {
+  id                String   @id @default(uuid())
+  filename          String
+  roastType         String   // Humorous, Constructive, Brutal
+  content           String   @db.Text
+  sections          Json?    // Section-by-section analysis
+  scores            Json?    // Scoring for different aspects
+  cloudStoragePath  String   // S3 key for resume file
+  isPublic          Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  
+  @@index([createdAt])
+}
